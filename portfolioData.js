@@ -360,6 +360,16 @@ export const aboutTabs = [
 // Projects Section Data
 export const projectsData = [
   {
+    title: "☁️ HelioScape",
+    description:
+      "Decentralized Zero-Knowledge Cloud Storage A 'Meta-Cloud' platform that aggregates free storage tiers from Google Drive, Dropbox, OneDrive, and MEGA into a single, infinite, secure virtual drive. HelioScape employs a Server-Side RAID-0 architecture: files are streamed to a Node.js backend where they are encrypted (AES-256-GCM) and split into shards in real-time memory streams, then distributed across multiple providers in parallel. This ensures Zero-Knowledge Privacy (no single provider holds the complete file) and High Throughput without buffering files to disk.",
+    src: "https://images.ctfassets.net/0idwgenf7ije/5VlsclFu9SoqhlsYG3l4TV/e3de33232398b778441f34f7cca8580c/An_Overview_of_Decentralized_Cloud_Services-100.jpg?fm=webp&w=1024&q=100",
+    link: "https://images.ctfassets.net/0idwgenf7ije/5VlsclFu9SoqhlsYG3l4TV/e3de33232398b778441f34f7cca8580c/An_Overview_of_Decentralized_Cloud_Services-100.jpg?fm=webp&w=1024&q=100",
+    color: "#5196fd",
+    githubLink: "https://github.com/GAVIPRASAD/HelioScape",
+    liveLink: "https://github.com/GAVIPRASAD/HelioScape",
+  },
+  {
     title: "🗝️ PassKind",
     description:
       "A full-stack, self-hosted password manager built with Spring Boot and React. Features zero-knowledge AES-256-GCM encryption, JWT authentication, real-time audit logging, and Docker deployment. Includes forgot password flows, email OTP verification with custom HTML templates, and auto-lock security.",
