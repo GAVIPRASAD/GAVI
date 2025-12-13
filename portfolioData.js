@@ -562,6 +562,16 @@ export const certificationsData = [
     icon: "FaIBM",
     link: "https://www.coursera.org/account/accomplishments/verify/E2BH9FFDDPDU",
   },
+  {
+    id: 9,
+    name: "Salesforce Certified Agentforce Specialist",
+    issuer: "Salesforce",
+    date: "2025",
+    icon: "FaSalesforce",
+    link: "https://trailhead.salesforce.com/en/credentials/verification/",
+  }
+  
+
 ];
 
 // Navigation Links Data
