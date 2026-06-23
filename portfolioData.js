@@ -79,9 +79,9 @@ export const heroData = {
   roles: [
     "Salesforce Developer & Cloud Specialist",
     "Full-Stack Web Developer",
-    "MERN Stack",
+    "MERN Stack & Spring Boot Developer",
   ],
-  description: `Passionate developer 🚀 | ${BRAND_INFO.framework} 🔧 |  Spring Boot  |  MERN Stack. Crafting innovative solutions and coding the future 💻✨`,
+  description: `Passionate developer crafting scalable, secure systems 🚀 | ${BRAND_INFO.framework} (Apex, LWC, Data Cloud, Agentforce) 🔧 | Spring Boot + MERN | Splunk + Grafana observability | MCP-powered workflows 💻✨`,
   resumeUrl:
     "https://drive.google.com/file/d/1_a6sPTbj4PYwcG23gAA_FYRywEF40PxZ/view?usp=sharing",
   projectsUrl: "#projects",
@@ -98,17 +98,22 @@ export const heroData = {
       "JavaScript",
       "Python",
       "Apex",
-      "Salesforce",
+      "LWC",
+      "SOQL/SOSL",
+      "Salesforce APIs",
       "React",
       "Spring Boot",
       "Node.js",
-      "Redux",
       "Express",
       "MySQL",
       "MongoDB",
       "Docker",
+      "Jenkins",
       "Git",
-      "SOQL",
+      "Splunk",
+      "Grafana",
+      "MCP Servers",
+      "Agentic Workflows",
     ],
     // passion: "Building amazing things",
     available: true,
@@ -131,27 +136,12 @@ export const skillsData = {
       title: "Frontend Development",
       color: "text-blue-400",
       skills: [
-        {
-          name: "HTML5",
-          iconName: "BsFileEarmarkCode",
-          color: "text-[#E34F26]",
-        },
-        {
-          name: "CSS3",
-          iconName: "BsFileEarmarkCode",
-          color: "text-[#1572B6]",
-        },
+        { name: "HTML5", iconName: "BsFileEarmarkCode", color: "text-[#E34F26]" },
+        { name: "CSS3", iconName: "BsFileEarmarkCode", color: "text-[#1572B6]" },
         { name: "React", iconName: "FaReact", color: "text-[#61DAFB]" },
-        {
-          name: "Tailwind CSS",
-          iconName: "SiTailwindcss",
-          color: "text-[#38B2AC]",
-        },
-        {
-          name: "TypeScript",
-          iconName: "SiTypescript",
-          color: "text-[#3178C6]",
-        },
+        { name: "Tailwind CSS", iconName: "SiTailwindcss", color: "text-[#38B2AC]" },
+        { name: "TypeScript", iconName: "SiTypescript", color: "text-[#3178C6]" },
+        { name: "Zustand", iconName: "BsGrid1X2", color: "text-[#F59E0B]" },
       ],
     },
     {
@@ -159,18 +149,61 @@ export const skillsData = {
       title: "Backend Development",
       color: "text-green-400",
       skills: [
-        { name: "Node.js", iconName: "FaNodeJs", color: "text-[#339933]" },
         { name: "Java", iconName: "FaJava", color: "text-[#3776AB]" },
         { name: "Spring Boot", iconName: "FaJava", color: "text-[#3776AB]" },
+        { name: "Node.js", iconName: "FaNodeJs", color: "text-[#339933]" },
         { name: "Python", iconName: "FaPython", color: "text-[#3776AB]" },
-        {
-          name: "MySQL",
-          iconName: "FaDatabase",
-          color: "text-[#336791]",
-        },
+        { name: "Flask", iconName: "FaPython", color: "text-[#3776AB]" },
+        { name: "MySQL", iconName: "FaDatabase", color: "text-[#336791]" },
         { name: "MongoDB", iconName: "SiMongodb", color: "text-[#47A248]" },
+        { name: "PostgreSQL", iconName: "FaDatabase", color: "text-[#336791]" },
+        { name: "Redis", iconName: "FaDatabase", color: "text-[#D82C20]" },
         { name: "REST APIs", iconName: "BsGrid1X2", color: "text-[#FF6C37]" },
         { name: "GraphQL", iconName: "SiGraphql", color: "text-[#E10098]" },
+      ],
+    },
+    {
+      iconName: "Cloud",
+      title: "Salesforce Ecosystem",
+      color: "text-cyan-400",
+      skills: [
+        { name: "Apex", iconName: "FaSalesforce", color: "text-[#00A1E0]" },
+        { name: "Apex Triggers", iconName: "FaSalesforce", color: "text-[#00A1E0]" },
+        { name: "LWC", iconName: "FaSalesforce", color: "text-[#00A1E0]" },
+        { name: "Visualforce", iconName: "FaSalesforce", color: "text-[#00A1E0]" },
+        { name: "SOQL / SOSL", iconName: "FaDatabase", color: "text-[#00A1E0]" },
+        { name: "Salesforce APIs", iconName: "BsGrid1X2", color: "text-[#00A1E0]" },
+        { name: "Data Cloud", iconName: "FaSalesforce", color: "text-[#00A1E0]" },
+        { name: "Agentforce", iconName: "FaSalesforce", color: "text-[#00A1E0]" },
+        { name: "Salesforce Flows", iconName: "FcWorkflow", color: "" },
+      ],
+    },
+    {
+      iconName: "Cpu",
+      title: "AI / Agentic Development",
+      color: "text-fuchsia-400",
+      skills: [
+        { name: "MCP Servers", iconName: "Cpu", color: "text-[#A855F7]" },
+        { name: "Agentic Workflows", iconName: "FcWorkflow", color: "" },
+        { name: "AI-Assisted Code Review", iconName: "BsGrid1X2", color: "text-[#A855F7]" },
+        { name: "Prompt Engineering", iconName: "BsGrid1X2", color: "text-[#A855F7]" },
+        { name: "RAG Patterns", iconName: "FaDatabase", color: "text-[#A855F7]" },
+        { name: "Intelligent Automation", iconName: "FcWorkflow", color: "" },
+      ],
+    },
+    {
+      iconName: "Database",
+      title: "Monitoring & Observability",
+      color: "text-emerald-400",
+      skills: [
+        { name: "Splunk", iconName: "FaDatabase", color: "text-[#65A637]" },
+        { name: "Grafana", iconName: "FaDatabase", color: "text-[#F46800]" },
+        { name: "Gadget", iconName: "FcWorkflow", color: "" },
+        { name: "Tableau", iconName: "BsGrid1X2", color: "text-[#E97627]" },
+        { name: "Log Analysis", iconName: "BsFileEarmarkCode", color: "text-[#10B981]" },
+        { name: "Anomaly Detection", iconName: "BsGrid1X2", color: "text-[#10B981]" },
+        { name: "Alerting & Dashboards", iconName: "BsGrid1X2", color: "text-[#10B981]" },
+        { name: "SRE Practices", iconName: "BsGrid1X2", color: "text-[#10B981]" },
       ],
     },
     {
@@ -206,9 +239,11 @@ export const skillsData = {
         { name: "Docker", iconName: "FaDocker", color: "text-[#2496ED]" },
         { name: "CI/CD", iconName: "FcWorkflow", color: "" },
         { name: "Kubernetes", iconName: "BsGrid1X2", color: "text-[#326CE5]" },
-        { name: "Git", iconName: "FaGitAlt", color: "text-[#F05032]" },
-        { name: "Linux", iconName: "FaLinux", color: "text-[#FCC624]" },
         { name: "Jenkins", iconName: "FaJenkins", color: "text-[#FCC624]" },
+        { name: "Nginx", iconName: "BsGrid1X2", color: "text-[#009639]" },
+        { name: "Git", iconName: "FaGitAlt", color: "text-[#F05032]" },
+        { name: "GitOps", iconName: "FaGitAlt", color: "text-[#F05032]" },
+        { name: "Linux", iconName: "FaLinux", color: "text-[#FCC624]" },
       ],
     },
     {
@@ -223,6 +258,8 @@ export const skillsData = {
         { name: "Vercel", iconName: "SiVercel", color: "text-white" },
         { name: "Vite", iconName: "SiVite", color: "text-[#646CFF]" },
         { name: "Jira", iconName: "FaJira", color: "text-[#646CFF]" },
+        { name: "Postman", iconName: "BsGrid1X2", color: "text-[#FF6C37]" },
+        { name: "Slack Automations", iconName: "BsGrid1X2", color: "text-[#4A154B]" },
       ],
     },
     {
@@ -254,19 +291,19 @@ export const skillsData = {
 // Experience Section Data
 export const experienceData = [
   {
-    title: "Associate Pro Active Monitoring Engineer",
+    title: "Associate Proactive Monitoring Engineer",
     company: "Salesforce",
     period: "Aug 2024 - Present",
     description:
-      "Developed internal tools including Chrome plugins and automation utilities to streamline operations across Salesforce orgs. Utilized Splunk for debugging and issue analysis, ensuring faster resolution and improved system reliability. Collaborated on monitoring solutions using Gadget to proactively detect anomalies and trigger customer alerts. Enhanced operational efficiency through automation and real-time monitoring strategies. Interacted directly with Salesforce customers to investigate and resolve org-level disruptions. Contributed to delivering a seamless user experience by minimizing downtime and improving system performance.",
+      "Engineering internal Chrome extensions and automation utilities by integrating React.js, Zustand, and JavaScript with Apex, Salesforce APIs, SOQL, and SOSL — productionizing custom Apex Triggers that automate complex cross-org operations and convert manual monitoring tasks into scalable, code-driven workflows with strong data-consistency guarantees. Architected enterprise-grade observability using Splunk for deep-dive log analysis and Grafana for real-time metrics dashboards and alerting — proactively detecting anomalies, reducing mean-time-to-detect (MTTD), and measurably improving org reliability. Developed predictive monitoring solutions with Gadget, Splunk, and Grafana that alert key customers to potential service disruptions before business impact occurs, shifting reliability work decisively left. Built Slack workflow automations to streamline cross-functional communication and incident handoffs, and designed interactive Tableau dashboards unifying multiple data sources to deliver real-time insights and data-driven decision-making. Integrated MCP-powered (Model Context Protocol) agentic workflows and modern AI tooling into engineering, code review, and incident triage to deliver intelligent, context-aware automation. Designed and shipped custom Salesforce Flows, validation rules, reports, and dashboards with Lightning components and declarative automation to streamline business processes, improve KPI visibility, and drive operational efficiency. Partnered directly with Salesforce customers to investigate and resolve org-level disruptions, contributing to a seamless user experience through minimized downtime and improved system performance.",
     iconName: "FaSalesforce",
   },
   {
-    title: "Pro Active Monitoring Intern",
+    title: "Proactive Monitoring Intern",
     company: "Salesforce",
-    period: "Feb 2023 - Aug 2024",
+    period: "Feb 2024 - Aug 2024",
     description:
-      "Possessing extensive experience within the Salesforce ecosystem, I specialize in implementing custom configurations and building robust automation tools via Salesforce APIs to streamline operations. I leverage Splunk for advanced debugging and root cause analysis, a strategy that drives faster incident resolution and ensures sustained system reliability across complex Salesforce organizations.",
+      "Partnered cross-functionally with the engineering team to design visibility tools and monitoring utilities that streamlined task execution across complex, multi-tenant Salesforce Org environments. Specialized in implementing custom Salesforce configurations and building robust automation tools via Salesforce APIs to streamline operations. Leveraged Splunk for advanced debugging, log analysis, and root-cause analysis — a strategy that drove faster incident resolution and sustained system reliability across complex Salesforce organizations. Laid the foundation for the monitoring and automation suite later expanded in the full-time role.",
     iconName: "FaSalesforce",
   },
   {
@@ -274,7 +311,7 @@ export const experienceData = [
     company: "Care4Edu",
     period: "July 2023 - Jan 2024",
     description:
-      "Built secure, production-grade web applications using Spring Boot, React.js, MySQL, Docker, and Nginx. Developed scalable backend services and responsive front-end interfaces for optimal performance. Managed CI/CD pipelines with Jenkins and automated tasks using Shell scripting. Configured web servers and reverse proxies to enhance security and efficiency. Gained hands-on experience in full-cycle development and software engineering best practices.",
+      "Architected and shipped secure, production-grade full-stack web applications using Spring Boot, React.js, MySQL, Docker, and Nginx — engineered for scalable user traffic and seamless digital experiences. Designed and deployed secure RESTful APIs backed by MySQL with normalized relational schemas and indexed query paths, achieving sub-second data retrieval and robust performance under load. Implemented JWT-based authentication and role-based access control across user tiers (students, instructors, admins) with password hashing for privacy-by-default. Built reusable React component libraries and responsive Tailwind-based UI primitives to accelerate frontend feature delivery and ensure consistent UX. Productionized CI/CD pipelines on Jenkins and Docker, automating the build-test-deploy lifecycle alongside Shell-scripted task automation. Configured Nginx web servers and reverse proxies to harden security, terminate TLS, and improve request-handling efficiency. Containerized the full stack with Docker Compose for reproducible local development and production parity. Owned end-to-end feature delivery in an Agile environment — from requirement gathering and API design to deployment and post-release monitoring — gaining hands-on experience in full-cycle development and software engineering best practices.",
     iconName: "Code2",
   },
 ];
@@ -295,7 +332,7 @@ export const educationData = [
       "etc..",
     ],
     description:
-      "Developed strong analytical and critical thinking skills while gaining expertise in various technologies and frameworks. Acquired both theoretical and practical experience in databases, networking, security, cloud computing, web development, and software engineering, with a focus on solving real-world technical challenges efficiently. Collaborated on diverse projects, enhancing teamwork and communication skills while delivering high-quality solutions. Continuously stayed updated with emerging technologies to adapt to the evolving tech landscape.",
+      "Developed strong analytical and critical thinking skills while gaining expertise in modern technologies, frameworks, and engineering practices. Acquired both theoretical and practical experience across databases, networking, security, cloud computing, web development, and software engineering — with a focus on solving real-world technical challenges efficiently. Collaborated on diverse projects, enhancing teamwork and communication skills while delivering high-quality solutions. Continuously stayed updated with emerging technologies — including MCP-powered agentic workflows and modern AI tooling — to adapt to the evolving tech landscape.",
   },
   {
     degree: "Pre University / 12th grade",
@@ -314,13 +351,16 @@ export const aboutData = {
   title: "Hi, I'm Gavi",
   imageUrl: "https://i.ibb.co/qkVRc5p/20240715-113411-1.jpg",
   paragraphs: [
-    `I’m an Ambitious Associate Proactive Monitoring Engineer at Salesforce, specializing in building internal tools and smart
-    monitoring systems for Salesforce. With strong proficiency in multiple programming languages and frameworks,`,
-    "I specialize in modern web technologies and enjoy working on projects that challenge me to grow. I bring dedication and creativity to every project.",
-    `I’m passionate about solving real-world problems through scalable, industry-grade applications. I thrive in collaborative
-    environments and bring excellent communication skills in English, Telugu, Kannada, and Hindi. I’m fueled by curiosity for
-    emerging technologies and a desire to contribute to innovative development.`,
-    "My journey in tech started with curiosity and has evolved into a career focused on building innovative solutions.",
+    `I'm an ambitious Associate Proactive Monitoring Engineer at Salesforce, specializing in architecting internal tools,
+    intelligent monitoring systems, and automation utilities for the Salesforce ecosystem. I combine strong full-stack
+    engineering with deep Salesforce expertise — Apex, LWC, SOQL/SOSL, Salesforce APIs, Data Cloud, and Agentforce.`,
+    `I bring enterprise-grade observability instincts sharpened by Splunk and Grafana — driving anomaly detection,
+    predictive alerting, and measurable improvements in mean-time-to-detect (MTTD) across complex Salesforce orgs.
+    I'm passionate about solving real-world problems through scalable, secure, industry-grade applications and thrive in
+    collaborative Agile environments, with strong communication in English, Telugu, Kannada, and Hindi.`,
+    `I also integrate MCP-powered agentic workflows and modern AI tooling into my engineering practice to deliver
+    intelligent, context-aware automation — keeping quality high while moving fast.`,
+    "My journey in tech started with curiosity and has evolved into a career focused on building innovative solutions that ship reliably and scale gracefully.",
   ],
   quote: "Code is like humor. When you have to explain it, it's bad.",
   author: "Cory House",
@@ -331,22 +371,22 @@ export const aboutSkills = [
   {
     iconName: "Brain",
     title: "Problem Solver",
-    desc: "Love tackling complex challenges",
+    desc: "Love tackling complex, real-world engineering challenges",
   },
   {
     iconName: "Zap",
     title: "Fast Learner",
-    desc: "Quick to adapt to new technologies",
+    desc: "Quick to adopt new tools, frameworks, and modern workflows",
   },
   {
     iconName: "Target",
     title: "Goal-Oriented",
-    desc: "Focused on delivering results",
+    desc: "Focused on delivering measurable, production-grade results",
   },
   {
     iconName: "Sparkles",
-    title: "Creative",
-    desc: "Innovative approach to development",
+    title: "Creative Builder",
+    desc: "Pairs MCP agents and modern tooling with strong engineering fundamentals",
   },
 ];
 
@@ -382,7 +422,7 @@ export const projectsData = [
   {
     title: "🌾 Cultimax",
     description:
-      "CultiMax is a dynamic, lightweight, and mobile-compatible web application designed to help farmers buy agricultural products at the right time. Using MERN Stack.",
+      "CultiMax is a dynamic, lightweight, mobile-compatible MERN-stack web application designed to help farmers buy agricultural products at the right time — connecting farmers directly to suppliers and replacing fragmented offline workflows with a seamless digital experience.",
     src: "https://user-images.githubusercontent.com/112298797/224025880-1e149f44-7eab-4447-9a4d-a1011e55e0e7.png",
     link: "https://user-images.githubusercontent.com/112298797/224025880-1e149f44-7eab-4447-9a4d-a1011e55e0e7.png",
     color: "#5196fd",
@@ -402,7 +442,7 @@ export const projectsData = [
   {
     title: "🌽 Cultimax CD and D2",
     description:
-      "CultiMax D2 and CD are the intelligent backend microservice for the CultiMax ecosystem. Built with Python and Flask, this service hosts trained Machine Learning models to provide real-time agricultural predictions, such as crop suitability and fertilizer recommendations, to the main application.",
+      "CultiMax CD and D2 is the intelligent backend microservice for the CultiMax ecosystem. Built with Python and Flask, it hosts trained Machine Learning models that deliver real-time agricultural predictions — such as crop suitability and fertilizer recommendations — to the main application, productionizing intelligent automation at the edge of the platform.",
     src: "water.jpg",
     link: "https://keymakr.com/blog/content/images/size/w2000/2024/10/KMmain--47-.jpg",
     color: "#fff",
